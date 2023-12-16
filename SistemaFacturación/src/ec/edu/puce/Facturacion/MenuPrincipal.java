@@ -11,6 +11,7 @@ import javax.swing.JMenuItem;
 import java.awt.Font;
 import java.awt.Color;
 import java.awt.event.ActionListener;
+import java.util.List;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JDesktopPane;
@@ -22,6 +23,7 @@ public class MenuPrincipal extends JFrame {
 	private JPanel contentPane;
 	private FrmCliente frmCliente;
 	private JDesktopPane desktopPane;
+	private List<Cliente> clientes;
 	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -110,7 +112,7 @@ public class MenuPrincipal extends JFrame {
 		desktopPane.setLayout(null);
 	}
 	private void mostrarListaClientes() {
-	    FrmListaCliente frmListaCliente = new FrmListaCliente(frmCliente.getModeloTabla());
+	    FrmListaCliente frmListaCliente = new FrmListaCliente(clientes);
 	    desktopPane.add(frmListaCliente);
 	    frmListaCliente.setVisible(true);
 	}

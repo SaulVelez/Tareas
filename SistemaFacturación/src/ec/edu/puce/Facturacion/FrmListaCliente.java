@@ -1,13 +1,13 @@
 package ec.edu.puce.Facturacion;
 
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
 import javax.swing.JInternalFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
+
 import java.awt.Font;
+import java.util.List;
 
 public class FrmListaCliente extends JInternalFrame {
 
@@ -15,7 +15,7 @@ public class FrmListaCliente extends JInternalFrame {
     private JTable table;
 
     // Agrega un constructor que acepta un DefaultTableModel
-    public FrmListaCliente(DefaultTableModel modeloTabla) {
+    public FrmListaCliente(List<Cliente> clientes) {
         setBounds(100, 100, 519, 617);
 
         JScrollPane scrollPane = new JScrollPane();
@@ -23,7 +23,7 @@ public class FrmListaCliente extends JInternalFrame {
 
         table = new JTable();
         table.setFont(new Font("Tahoma", Font.BOLD, 12));
-        table.setModel(modeloTabla); // Utiliza el modelo de tabla proporcionado
+        table.setModel((TableModel) clientes); // Utiliza el modelo de la tabla proporcionado
         scrollPane.setViewportView(table);
     }
 
