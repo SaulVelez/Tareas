@@ -111,7 +111,7 @@ public class FrmProducto extends JInternalFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"Id", "Descripci\u00F3n", "Precio", "Cantidad", "Total"
+				"Id", "Descripcion", "Precio", "Cantidad", "Total"
 			}
 		));
 		scrollPane.setViewportView(table);

@@ -25,7 +25,6 @@ public class EliminarProducto extends JDialog {
 	private final JPanel contentPanel = new JPanel();
 	private DefaultTableModel modelLocal;
 	private JTable table;
-	//private DefaultTableModel referenceModel;
 	private int indiceProducto = -1;
 
 

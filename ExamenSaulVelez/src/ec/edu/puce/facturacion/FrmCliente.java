@@ -133,7 +133,7 @@ public class FrmCliente extends JInternalFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"C\u00E9dula", "Nombres", "Apellidos", "Tel\u00E9fono", "Email", "Direcci\u00F3n"
+				"Cedula", "Nombres", "Apellidos", "Telefono", "Email", "Direccion"
 			}
 		));
 		scrollPane.setViewportView(table);

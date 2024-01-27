@@ -53,7 +53,7 @@ public class ListaProductos extends JDialog {
 			new Object[][] {
 			},
 			new String[] {
-				"Id", "Descipci\u00F3n", "Precio", "Cantidad", "Total"
+				"Id", "Descipcion", "Precio", "Cantidad", "Total"
 			}
 		));
 		scrollPane.setViewportView(table);

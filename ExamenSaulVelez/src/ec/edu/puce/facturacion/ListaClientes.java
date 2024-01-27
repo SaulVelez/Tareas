@@ -50,7 +50,7 @@ public class ListaClientes extends JDialog {
 			new Object[][] {
 			},
 			new String[] {
-				"Cedula", "Nombres", "Apellidos", "Tel\u00E9fono", "Email", "Direcci\u00F3n"
+				"Cedula", "Nombres", "Apellidos", "Telefono", "Email", "Direcci\u00F3n"
 			}
 		));
 		scrollPane.setViewportView(table);
