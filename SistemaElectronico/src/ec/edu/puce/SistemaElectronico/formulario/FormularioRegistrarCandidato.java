@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import ec.edu.puce.SistemaElectronico.dominio.CandidatoSistemaElectronico;
+
 
 import javax.swing.*;
 import java.awt.*;
